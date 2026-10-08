@@ -34,3 +34,5 @@ Push `main` to deploy via GitHub Actions and the existing FTP secrets (`FTP_SERV
 Public registry summary omits personal officer/shareholder names and capital at the owner’s request; the source registration document remains unchanged.
 
 The founder’s concept informed the ownership/operator distinction, five-stage asset lifecycle and intended technical, financial and contractual oversight. These describe the intended approach, rather than asserting existing operating procedures or appointed counterparties.
+
+Edition 05: the aviation/maritime section uses paired, unbranded generated concept portraits at blue hour, with integrated copy and a staggered editorial layout. Each portrait reveals once on entering the viewport, using a 1.65-second crop reveal, gentle image settling and delayed copy. Reduced-motion preferences bypass the sequence.

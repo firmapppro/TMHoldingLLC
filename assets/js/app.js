@@ -46,3 +46,16 @@
   scrollFrame=requestAnimationFrame(frame);
  }));
 })();
+
+// A single, viewport-triggered reveal for each photographic composition.
+(() => {
+ const preference=matchMedia('(prefers-reduced-motion: reduce)');
+ const cards=[...document.querySelectorAll('.asset-feature')];
+ if(!cards.length||preference.matches||!('IntersectionObserver' in window))return;
+ document.body.classList.add('feature-ready');
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}
+ }),{threshold:.16,rootMargin:'0px 0px -40px 0px'});
+ cards.forEach(card=>observer.observe(card));
+ preference.addEventListener('change',()=>{if(preference.matches){observer.disconnect();document.body.classList.remove('feature-ready')}});
+})();
