@@ -10,7 +10,7 @@
   all.setAttribute('aria-pressed', String(overview)); all.textContent = overview ? 'Single page' : 'View all';
  }
  function fromHash() { const page = Number(location.hash.replace('#page-', '')); index = Math.min(slides.length - 1, Math.max(0, (Number.isFinite(page) && page > 0 ? page : 1) - 1)); update(); }
- function go(n) { index = Math.max(0, Math.min(slides.length - 1, n)); history.replaceState(null, '', `#page-${index + 1}`); update(); slides[index].scrollIntoView({block:'start'}); }
+ function go(n) { index = Math.max(0, Math.min(slides.length - 1, n)); history.replaceState(null, '', `#page-${index + 1}`); update(); window.scrollTo({top:0,behavior:'instant'}); }
  links.forEach((link, i) => link.addEventListener('click', event => { event.preventDefault(); go(i); }));
  prev.addEventListener('click', () => go(index - 1)); next.addEventListener('click', () => go(index + 1));
  all.addEventListener('click', () => { overview = !overview; update(); });
@@ -25,3 +25,5 @@
  document.querySelector('#all').addEventListener('click',()=>document.body.classList.toggle('overview',document.querySelector('#all').getAttribute('aria-pressed')==='true'));
  document.querySelector('#replay-motion').addEventListener('click',()=>{const el=document.querySelector('.motion-demo');el.classList.remove('replaying');requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('replaying')))});
 })();
+
+(() => {function fit(){const scale=innerWidth>700?Math.min(1,(innerWidth-60)/1160,Math.max(.3,(innerHeight-180)/725)):1;document.documentElement.style.setProperty('--book-scale',scale)}window.addEventListener('resize',fit);fit()})();
