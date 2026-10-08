@@ -1,14 +1,16 @@
 # TM Holding LLC
 
-Corporate website and 18-chapter identity guide. Edition 02, 8 October 2026.
+Corporate website and 18-chapter identity guide. Edition 03, 8 October 2026.
 
 - Website: https://chypulis.top/TMHoldingLLC/
 - Identity guidelines: https://chypulis.top/TMHoldingLLC/brandbook/
 
 ## Design
-Ivory, forest and restrained brass. Instrument Serif display typography, Inter body text and Amiri Arabic signature. Fonts are self-hosted with OFL licences in `assets/fonts/`. Flat SVG identity assets are in `assets/brand/`. Master SVG signatures have outlined English typography. Typeset the registered Arabic signature separately with Amiri.
+Edition 03 follows the visual direction requested by the owner: Global Jet charter (https://globaljet.aero/en/charter). Graphite #323438, bronze #BD9973, white and silver. Centred signature, uppercase Roman display, full-bleed aviation imagery and restrained reveal transitions. Cinzel and Lato are open-source alternatives to the reference's Trajan Pro and Proxima Nova; Amiri is retained for Arabic. Self-hosted fonts include OFL licences.
 
-The maritime editorial image was generated using the built-in imagegen tool. It is illustrative and is not evidence of asset ownership. Prompt: restrained overhead editorial view of dark emerald Arabian Gulf water, a tiny unbranded yacht and a quiet wake, natural light, no logos or text.
+The monogram and English signatures are outlined SVGs. Aviation hero and aircraft/yacht application photographs are generated concept imagery, not evidence of asset ownership. Mockup logos were edited using the master monogram as reference. Aviation/maritime focus photographs are existing project assets, used illustratively.
+
+The 18-page brandbook includes identity construction, clear space, typography, palette, contrast, misuse, photography, business cards, correspondence, aviation livery, yacht transom, desktop/mobile composition prototypes and an interactive reveal demonstration. Physical applications are concepts requiring production approval.
 
 ## Content basis
 Legal name, QFC 05193, registration date, officers and authorised/issued capital are transcribed from the supplied QFC record. The address is reproduced exactly, including `Office No. 124Register05`. Do not silently correct it. No paid-up-capital claim is made. The business focus comes from the project brief; the PDF does not include detailed permitted activities.

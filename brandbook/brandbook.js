@@ -17,4 +17,11 @@
  document.querySelector('#print').addEventListener('click', () => window.print());
  document.addEventListener('keydown', event => { if (/INPUT|TEXTAREA|SELECT/.test(event.target.tagName) || event.target.isContentEditable) return; if (event.key === 'ArrowRight' || event.key === 'PageDown') { event.preventDefault(); go(index + 1); } if (event.key === 'ArrowLeft' || event.key === 'PageUp') { event.preventDefault(); go(index - 1); } });
  window.addEventListener('hashchange', fromHash); document.body.classList.add('book-enhanced'); fromHash();
+})();(() => {
+ const contents=document.querySelector('#contents'),index=document.querySelector('#book-index');
+ contents.addEventListener('click',()=>{index.hidden=!index.hidden;contents.setAttribute('aria-expanded',String(!index.hidden))});
+ index.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{index.hidden=true;contents.setAttribute('aria-expanded','false')}));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){index.hidden=true;contents.setAttribute('aria-expanded','false')}});
+ document.querySelector('#all').addEventListener('click',()=>document.body.classList.toggle('overview',document.querySelector('#all').getAttribute('aria-pressed')==='true'));
+ document.querySelector('#replay-motion').addEventListener('click',()=>{const el=document.querySelector('.motion-demo');el.classList.remove('replaying');requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('replaying')))});
 })();
