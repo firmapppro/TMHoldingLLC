@@ -19,8 +19,8 @@ Aircraft models are indicative interests, not an owned fleet or placed orders. G
 
 The site does not claim financial-services authorisation, verified AML compliance, manufacturer affiliation or operating certificates. Current registration and licensed activity scope need verification with QFC before OEM submissions.
 
-## Temporary enquiry channel
-The owner approved `test@email.com` as a placeholder. It appears in the contact dialog and `assets/js/app.js`. The form opens an email draft; it does not transmit or store data. Replace the address and temporary notices after establishing a real company mailbox. Never describe a mailto draft as a successfully submitted enquiry.
+## Enquiry channel
+The owner supplied `info@tmholding.qa` for public contact and enquiry drafts. The address is shown in the contact section and dialog and configured in `assets/js/app.js`. The form opens an email draft; it does not transmit or store data. Never describe a mailto draft as a successfully submitted enquiry.
 
 ## Local preview
 `python3 -m http.server 8765` from this directory. No build step or package install is required.
@@ -32,3 +32,5 @@ The owner approved `test@email.com` as a placeholder. It appears in the contact 
 Push `main` to deploy via GitHub Actions and the existing FTP secrets (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Only static public files in `assets/`, `brandbook/` and root HTML are uploaded. Source PDFs, documentation, scripts and repository files are excluded. Each file is staged under a temporary name before replacement; HTML is uploaded last. No unrelated remote files are deleted.
 
 Public registry summary omits personal officer/shareholder names and capital at the owner’s request; the source registration document remains unchanged.
+
+The founder’s concept informed the ownership/operator distinction, five-stage asset lifecycle and intended technical, financial and contractual oversight. These describe the intended approach, rather than asserting existing operating procedures or appointed counterparties.
