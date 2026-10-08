@@ -10,3 +10,21 @@
 @media(max-width:600px){.header{height:110px}.header .brand img{width:58px;height:58px}.header.scrolled{height:94px}.header.scrolled .brand img{width:44px;height:44px}.header .brand span{font-size:13px}.hero-copy{padding:0 22px}.ambient:before{width:420px;height:420px;right:-220px;opacity:.045}.ambient:after{width:600px;left:-200px}.ambient-horizon:before{width:140%;height:80%;right:-20%;opacity:1}.contact .ambient:before{left:-250px;opacity:.045}.statement-watermark{width:460px;height:460px;right:-150px;bottom:-60px}.hero-photo{will-change:auto}footer .brand span{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.hero-photo{translate:none;will-change:auto}.reveal-ready .reveal{opacity:1;transform:none}.ambient:before,.ambient:after,.statement-watermark,.statement:before{animation:none!important}dialog[open]{animation:none}}
 #navigation:not([hidden]){animation:dialog-arrive .7s cubic-bezier(.16,1,.3,1)}
+
+/* Continuous graphite ground with bronze light and engraved contours. */
+body:not(.book) main{background:#323438}
+.hero-shade{background:linear-gradient(180deg,#26282c66 0%,#26282c45 58%,#32343880 82%,#323438 100%),radial-gradient(ellipse at center,#26282c75,transparent 65%)}
+.section,.statement,.contact{background-color:transparent}
+.ambient:after{inset:0;width:auto;height:auto;background:radial-gradient(ellipse at 3% 45%,rgba(189,153,115,.24),transparent 57%),radial-gradient(ellipse at 100% 70%,rgba(114,136,156,.12),transparent 58%);animation:ambient-breathe 18s ease-in-out infinite alternate;animation-play-state:paused}
+.ambient:before{opacity:.14;right:-90px;top:4%;width:720px;height:720px}
+.ambient-horizon:before{inset:0;width:100%;height:100%;opacity:1;background:repeating-linear-gradient(-18deg,transparent 0,transparent 179px,#bd997319 180px,transparent 181px);mask-image:linear-gradient(transparent,#000 25%,#000 70%,transparent);animation:contour-drift 32s ease-in-out infinite alternate;animation-play-state:paused}
+.ambient-horizon:after{background:radial-gradient(ellipse at 90% 35%,rgba(189,153,115,.22),transparent 60%),radial-gradient(ellipse at 10% 70%,rgba(106,126,144,.16),transparent 60%)}
+.ambient-architecture:before{inset:0;width:100%;height:100%;opacity:1;background:repeating-linear-gradient(90deg,transparent 0,transparent 189px,#bd99731c 190px,transparent 191px);mask-image:radial-gradient(ellipse at 80% 50%,#000,transparent 72%);animation:none}
+.ambient-architecture:after{background:radial-gradient(ellipse at 0% 50%,rgba(189,153,115,.21),transparent 65%),radial-gradient(ellipse at 100% 55%,rgba(101,125,145,.14),transparent 60%)}
+.ambient{mask-image:linear-gradient(transparent 0%,#000 22%,#000 76%,transparent 100%)}
+.statement:before{inset:0;background:radial-gradient(ellipse at 20% 55%,#bd997333,transparent 60%),linear-gradient(180deg,#323438,#26282c 32%,#26282c 66%,#323438);animation:none}
+.statement-watermark{opacity:.18}
+.contact .ambient:before{opacity:.14;left:-140px;top:-100px}.contact .ambient:after{inset:0;background:radial-gradient(ellipse at 75% 45%,#bd99733b,transparent 65%),radial-gradient(ellipse at 10% 70%,#667c9024,transparent 58%)}
+@keyframes ambient-breathe{from{opacity:.7;transform:scale(1)}to{opacity:1;transform:scale(1.08)}}
+@media(max-width:600px){.ambient:before{width:480px;height:480px;right:-270px;opacity:.12}.contact .ambient:before{left:-290px;opacity:.12}.ambient:after{background:radial-gradient(ellipse at 0% 50%,#bd997333,transparent 70%),radial-gradient(ellipse at 100% 70%,#667c9024,transparent 65%)}}
+@media(prefers-reduced-motion:reduce){.ambient:after{animation:none!important}}

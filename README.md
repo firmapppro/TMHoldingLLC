@@ -13,7 +13,7 @@ The owner’s original wing / pillar / keel monogram is restored from the origin
 The 18-page brandbook includes identity construction, clear space, typography, palette, contrast, misuse, photography, business cards, correspondence, aviation livery, yacht transom, desktop/mobile composition prototypes and an interactive reveal demonstration. Physical applications are concepts requiring production approval.
 
 ## Content basis
-Legal name, QFC 05193, registration date, officers and authorised/issued capital are transcribed from the supplied QFC record. The address is reproduced exactly, including `Office No. 124Register05`. Do not silently correct it. No paid-up-capital claim is made. The business focus comes from the project brief; the PDF does not include detailed permitted activities.
+Legal name, QFC 05193 and registration date are transcribed from the supplied QFC record. The address is reproduced exactly, including `Office No. 124Register05`. Do not silently correct it. The business focus comes from the project brief; the PDF does not include detailed permitted activities.
 
 Aircraft models are indicative interests, not an owned fleet or placed orders. Global 6500 uses Rolls-Royce Pearl 15; Global 7500/8000 use GE Aerospace Passport. Source links are included in the aircraft disclosure.
 
@@ -30,3 +30,5 @@ The owner approved `test@email.com` as a placeholder. It appears in the contact 
 
 ## Deployment
 Push `main` to deploy via GitHub Actions and the existing FTP secrets (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Only static public files in `assets/`, `brandbook/` and root HTML are uploaded. Source PDFs, documentation, scripts and repository files are excluded. Each file is staged under a temporary name before replacement; HTML is uploaded last. No unrelated remote files are deleted.
+
+Public registry summary omits personal officer/shareholder names and capital at the owner’s request; the source registration document remains unchanged.
