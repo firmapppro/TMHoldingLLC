@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="TM Holding LLC original monogram">
-  <defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 80 360 375" role="img" aria-label="TM wing, pillar and keel monogram"><defs>
     <!-- Multi-stop luxury metallic gold gradients -->
     <linearGradient id="goldPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FBF4E2" />
@@ -31,27 +30,7 @@
       <feGaussianBlur stdDeviation="8" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-  </defs>
-
-  <!-- Background is transparent so it can sit on obsidian, navy or white -->
-
-  <!-- Outer Prestige Geometric Cartouche -->
-  <g class="cartouche" opacity="0.85">
-    <!-- Outer hairline octagonal diamond -->
-    <polygon points="250,22 435,98 478,250 435,402 250,478 65,402 22,250 65,98" 
-             fill="none" stroke="url(#goldPrimary)" stroke-width="1.2" stroke-opacity="0.5" />
-    <!-- Inner concentric frame -->
-    <polygon points="250,36 422,106 462,250 422,394 250,464 78,394 38,250 78,106" 
-             fill="none" stroke="url(#goldPrimary)" stroke-width="0.75" stroke-opacity="0.25" stroke-dasharray="8 4" />
-    <!-- Cardinal diamond pips -->
-    <rect x="247" y="19" width="6" height="6" transform="rotate(45 250 22)" fill="url(#goldLight)" />
-    <rect x="247" y="475" width="6" height="6" transform="rotate(45 250 478)" fill="url(#goldLight)" />
-    <rect x="19" y="247" width="6" height="6" transform="rotate(45 22 250)" fill="url(#goldLight)" />
-    <rect x="475" y="247" width="6" height="6" transform="rotate(45 478 250)" fill="url(#goldLight)" />
-  </g>
-
-  <!-- Central Interlocking TM Monogram Core -->
-  <g id="monogram-core">
+  </defs><g id="monogram-core">
     
     <!-- 1. The T - Aerodynamic Swept Wing Upper Bar -->
     <!-- Left Wing (Light Bevel) -->
@@ -116,5 +95,4 @@
     <!-- Center Precision Diamond Core -->
     <polygon points="250,92 257,104 250,116 243,104" fill="url(#goldLight)" />
     <circle cx="250" cy="104" r="1.5" fill="#FFFFFF" />
-  </g>
-</svg>
+  </g></svg>

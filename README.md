@@ -1,14 +1,14 @@
 # TM Holding LLC
 
-Corporate website and 18-chapter identity guide. Edition 03, 8 October 2026.
+Corporate website and 18-chapter identity guide. Edition 04, 8 October 2026.
 
 - Website: https://chypulis.top/TMHoldingLLC/
 - Identity guidelines: https://chypulis.top/TMHoldingLLC/brandbook/
 
 ## Design
-Edition 03 follows the visual direction requested by the owner: Global Jet charter (https://globaljet.aero/en/charter). Graphite #323438, bronze #BD9973, white and silver. Centred signature, uppercase Roman display, full-bleed aviation imagery and restrained reveal transitions. Cinzel and Lato are open-source alternatives to the reference's Trajan Pro and Proxima Nova; Amiri is retained for Arabic. Self-hosted fonts include OFL licences.
+Edition 04 follows the visual direction requested by the owner: Global Jet charter (https://globaljet.aero/en/charter). Graphite #323438, bronze #BD9973, white and silver. Centred signature, uppercase Roman display, full-bleed aviation imagery and restrained reveal transitions. Hero content and brandbook cover are vertically centred with equal top/bottom space. Section contours and soft background light move slowly; backgrounds pause off screen. Anchor scrolling eases over 1.05–1.6 seconds and reveal transitions use 1.6 seconds. Reduced-motion preferences disable these effects. Cinzel and Lato are open-source alternatives to the reference's Trajan Pro and Proxima Nova; Amiri is retained for Arabic. Self-hosted fonts include OFL licences.
 
-The monogram and English signatures are outlined SVGs. Aviation hero and aircraft/yacht application photographs are generated concept imagery, not evidence of asset ownership. Mockup logos were edited using the master monogram as reference. Aviation/maritime focus photographs are existing project assets, used illustratively.
+The owner’s original wing / pillar / keel monogram is restored from the original project archive, with its faceted gold, octagonal frame and original geometry. English wordmarks remain outlined SVGs. Compact core and uniform bronze variants are included for small and one-colour uses. Aviation hero and aircraft/yacht application photographs are generated concept imagery, not evidence of asset ownership. Mockup logos were edited using the master monogram as reference. Aviation/maritime focus photographs are existing project assets, used illustratively.
 
 The 18-page brandbook includes identity construction, clear space, typography, palette, contrast, misuse, photography, business cards, correspondence, aviation livery, yacht transom, desktop/mobile composition prototypes and an interactive reveal demonstration. Physical applications are concepts requiring production approval.
 
