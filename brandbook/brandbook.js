@@ -10,7 +10,7 @@
   all.setAttribute('aria-pressed', String(overview)); all.textContent = overview ? 'Single page' : 'View all';
  }
  function fromHash() { const page = Number(location.hash.replace('#page-', '')); index = Math.min(slides.length - 1, Math.max(0, (Number.isFinite(page) && page > 0 ? page : 1) - 1)); update(); }
- function go(n) { index = Math.max(0, Math.min(slides.length - 1, n)); history.replaceState(null, '', `#page-${index + 1}`); update(); if (overview) slides[index].scrollIntoView({block:'start'}); }
+ function go(n) { index = Math.max(0, Math.min(slides.length - 1, n)); history.replaceState(null, '', `#page-${index + 1}`); update(); slides[index].scrollIntoView({block:'start'}); }
  links.forEach((link, i) => link.addEventListener('click', event => { event.preventDefault(); go(i); }));
  prev.addEventListener('click', () => go(index - 1)); next.addEventListener('click', () => go(index + 1));
  all.addEventListener('click', () => { overview = !overview; update(); });

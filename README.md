@@ -6,7 +6,7 @@ Corporate website and 18-chapter identity guide. Edition 02, 8 October 2026.
 - Identity guidelines: https://chypulis.top/TMHoldingLLC/brandbook/
 
 ## Design
-Ivory, forest and restrained brass. Instrument Serif display typography, Inter body text and Amiri Arabic signature. Fonts are self-hosted with OFL licences in `assets/fonts/`. Flat SVG identity assets are in `assets/brand/`. SVG wordmarks retain live text; outline before final physical production.
+Ivory, forest and restrained brass. Instrument Serif display typography, Inter body text and Amiri Arabic signature. Fonts are self-hosted with OFL licences in `assets/fonts/`. Flat SVG identity assets are in `assets/brand/`. Master SVG signatures have outlined English typography. Typeset the registered Arabic signature separately with Amiri.
 
 The maritime editorial image was generated using the built-in imagegen tool. It is illustrative and is not evidence of asset ownership. Prompt: restrained overhead editorial view of dark emerald Arabian Gulf water, a tiny unbranded yacht and a quiet wake, natural light, no logos or text.
 
