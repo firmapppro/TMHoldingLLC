@@ -1,59 +1,30 @@
-# TM Holding LLC (تي ام هولدنج ذ.م.م)
+# TM Holding LLC
 
-> Institutional Movable Asset Management & Leasing &bull; Qatar Financial Centre Licensed Entity #05193 &bull; Doha, Qatar
+Corporate website and 18-chapter identity guide. Edition 02, 8 October 2026.
 
-## Live Digital Presence
-- **Holding Website / Prototype:** [https://chypulis.top/TMHoldingLLC/](https://chypulis.top/TMHoldingLLC/)
-- **Interactive Brand Guidelines:** [https://chypulis.top/TMHoldingLLC/brandbook/](https://chypulis.top/TMHoldingLLC/brandbook/)
+- Website: https://chypulis.top/TMHoldingLLC/
+- Identity guidelines: https://chypulis.top/TMHoldingLLC/brandbook/
 
----
+## Design
+Ivory, forest and restrained brass. Instrument Serif display typography, Inter body text and Amiri Arabic signature. Fonts are self-hosted with OFL licences in `assets/fonts/`. Flat SVG identity assets are in `assets/brand/`. SVG wordmarks retain live text; outline before final physical production.
 
-## Overview
+The maritime editorial image was generated using the built-in imagegen tool. It is illustrative and is not evidence of asset ownership. Prompt: restrained overhead editorial view of dark emerald Arabian Gulf water, a tiny unbranded yacht and a quiet wake, natural light, no logos or text.
 
-**TM Holding LLC** is a registered limited liability entity in the **Qatar Financial Centre (QFC)**, Doha, State of Qatar (Registration / License No. **05193**).
+## Content basis
+Legal name, QFC 05193, registration date, officers and authorised/issued capital are transcribed from the supplied QFC record. The address is reproduced exactly, including `Office No. 124Register05`. Do not silently correct it. No paid-up-capital claim is made. The business focus comes from the project brief; the PDF does not include detailed permitted activities.
 
-The company is structured to deploy private capital for the acquisition, long-term leasing, and asset governance of ultra-high-value civil movable property:
-1. **Business Aviation Fleet:** Acquisition and lease structuring of long-range business jets (specifically Bombardier Global 6500 / 7500 / 8000 series powered by Rolls-Royce Pearl 15 / Pearl 700 / BR710 turbine propulsion systems).
-2. **Luxury Maritime Assets:** Proprietary ownership and charter leasing of 40m+ to 80m+ custom displacement superyachts powered by Rolls-Royce MTU marine propulsion.
-3. **Syndicated Capital & SPVs:** Asset-backed capital structures for private family offices and sovereign co-investors under QFC common law regulations.
+Aircraft models are indicative interests, not an owned fleet or placed orders. Global 6500 uses Rolls-Royce Pearl 15; Global 7500/8000 use GE Aerospace Passport. Source links are included in the aircraft disclosure.
 
----
+The site does not claim financial-services authorisation, verified AML compliance, manufacturer affiliation or operating certificates. Current registration and licensed activity scope need verification with QFC before OEM submissions.
 
-## Stated End-Use Compliance (OEM Verification)
+## Temporary enquiry channel
+The owner approved `test@email.com` as a placeholder. It appears in the contact dialog and `assets/js/app.js`. The form opens an email draft; it does not transmit or store data. Replace the address and temporary notices after establishing a real company mailbox. Never describe a mailto draft as a successfully submitted enquiry.
 
-This platform provides authoritative regulatory verification for OEM partners, including **Bombardier Inc.** and **Rolls-Royce plc**:
-- **Civil End-Use Certification:** Assets acquired by TM Holding LLC are dedicated strictly to peaceful civil executive transport, commercial aircraft leasing, and luxury maritime operations.
-- **Maintenance Standards:** All fleet assets operate under authorized OEM maintenance management (Bombardier Authorized Service Facilities, Rolls-Royce Authorized Maintenance Centers).
-- **KYC & AML Rigor:** Complete adherence to Qatar Financial Centre Regulatory Authority (QFCRA) rules and FATF international transparency standards.
+## Local preview
+`python3 -m http.server 8765` from this directory. No build step or package install is required.
 
----
+## Brandbook
+18 chapters, direct chapter links, Previous/Next, keyboard navigation and View all. Print / Save PDF uses A4 landscape page styles. Enable background graphics and disable browser headers and footers when printing.
 
-## Corporate Registration Details
-
-| Property | Value |
-|---|---|
-| **Legal Entity** | TM Holding LLC (تي ام هولدنج ذ.م.م) |
-| **Licensing Authority** | Qatar Financial Centre (QFC) |
-| **License / Registration No.** | 05193 |
-| **Date of Registration** | 30/04/2026 |
-| **Registered Address** | Office No. 124, Floor No. 1, Regus Business Centre, No. 67, Doha, Qatar |
-| **Authorized / Issued Capital** | USD 10,000 (Fully Issued & Paid) |
-| **Significant Shareholder** | Jassem Mohamed N A Al-Misnad |
-| **Senior Executive & Director** | Pasindu Kaushalya Medagoda Arachchi Medagoda Arachchilage |
-
----
-
-## Brand Architecture & Assets
-
-Located in `assets/brand/`:
-- `tm-mark.svg` — Precision interlocking TM monogram (Swept wing + Hydrodynamic keel + Keystone column).
-- `tm-logo-horizontal.svg` — Master horizontal lockup with English & Arabic legal typography.
-- `tm-logo-vertical.svg` — Formal vertical crest lockup.
-- `tm-mark-white.svg` — Pure white monochrome edition.
-- `favicon.svg` — Scalable high-density browser favicon.
-
----
-
-## Deployment & Hosting
-
-Pushes to the `main` branch trigger automated FTP sync to `s29.hostia.name` via GitHub Actions (`.github/workflows/deploy.yml`), publishing immediately to `chypulis.top/TMHoldingLLC/`.
+## Deployment
+Push `main` to deploy via GitHub Actions and the existing FTP secrets (`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Only static public files in `assets/`, `brandbook/` and root HTML are uploaded. Source PDFs, documentation, scripts and repository files are excluded. Each file is staged under a temporary name before replacement; HTML is uploaded last. No unrelated remote files are deleted.
