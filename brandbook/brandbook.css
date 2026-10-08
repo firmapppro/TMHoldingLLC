@@ -4,3 +4,5 @@
 
 @media screen and (min-width:701px){.slide{width:1160px;height:725px;min-height:0;aspect-ratio:auto;zoom:var(--book-scale,1)}}
 @media print{.slide{zoom:1!important}}
+
+.photo-slide .page-top,.cover .page-top{color:#fff;text-shadow:0 1px 6px #0008}.bottom-shade{background:linear-gradient(#16181b55,transparent 22%,transparent 40%,#16181bd9 100%)}
