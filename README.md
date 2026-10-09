@@ -48,3 +48,5 @@ The corporate website has two static entry points: `index.html` (English) and `a
 Client-provided copy is integrated into the existing visual system. The public landing pages show Doha, Qatar and establishment in 2026 without the registration number. The online brand guide also removes its former number treatments.
 
 The enquiry form remains a mailto draft composer addressed to info@tmholding.qa. It never claims successful delivery. A real delivery endpoint and error handling must be implemented before using a Send Enquiry button or delivery acknowledgement. The privacy dialog describes the actual draft workflow.
+
+Arabic editorial review — 9 October 2026: refined the business register in the Arabic page, asset panels, enquiry form and privacy notice. Corporate confidentiality uses السرية; personal-data privacy retains الخصوصية. Budget references consistently use الموازنات. Literal social-introduction wording was replaced by professional-enquiry wording. The registered Arabic company name is unchanged.
