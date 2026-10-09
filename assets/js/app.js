@@ -8,11 +8,13 @@
   document.querySelector('#enquiry-form').addEventListener('submit', event => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const body = `Name: ${data.get('name')}\nOrganisation: ${data.get('organisation')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`;
+    const arabic = document.documentElement.lang === 'ar';
+    const labels = arabic ? ['الاسم', 'المؤسسة', 'البريد الإلكتروني', 'غرض التواصل'] : ['Name', 'Organisation', 'Email', 'Purpose'];
+    const body = `${labels[0]}: ${data.get('name')}\n${labels[1]}: ${data.get('organisation')}\n${labels[2]}: ${data.get('email')}\n${labels[3]}: ${data.get('purpose')}\n\n${data.get('message')}`;
     const recipient = 'info@tmholding.qa';
-    const href = `mailto:${recipient}?subject=${encodeURIComponent('TM Holding LLC — Corporate enquiry')}&body=${encodeURIComponent(body)}`;
+    const href = `mailto:${recipient}?subject=${encodeURIComponent(arabic ? 'تي ام هولدنج ذ.م.م — استفسار خاص' : 'TM Holding LLC — Private enquiry')}&body=${encodeURIComponent(body)}`;
     window.location.href = href;
-    document.querySelector('#draft-status').textContent = 'Email draft requested. Nothing has been sent by this website. If no application opened, configure an email application first.';
+    document.querySelector('#draft-status').textContent = arabic ? 'تم طلب فتح مسودة بريد إلكتروني. لم تُرسل أي رسالة من هذا الموقع. إذا لم يُفتح التطبيق، يمكنكم مراسلة info@tmholding.qa مباشرة.' : 'Email draft requested. Nothing has been sent by this website. If no application opened, email info@tmholding.qa directly from your email application.';
   });
 })();
 // Navigation and understated viewport reveals.
@@ -23,8 +25,18 @@
  const header=document.querySelector('.header');function sticky(){header.classList.toggle('scrolled',window.scrollY>60)}window.addEventListener('scroll',sticky,{passive:true});sticky();
  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){document.body.classList.add('reveal-ready');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
  const assetDialog=document.querySelector('#asset-dialog');assetDialog.querySelector('.dialog-close').addEventListener('click',()=>assetDialog.close());let assetOpener;assetDialog.addEventListener('close',()=>assetOpener?.focus());
- const content={aviation:['Business aviation','<p>Our intended focus includes long-range business aircraft, with ownership, leasing and lifecycle oversight considered for each proposed acquisition.</p><dl><div><dt>Bombardier Global 6500</dt><dd>Rolls-Royce Pearl 15</dd></div><div><dt>Bombardier Global 7500 / 8000</dt><dd>GE Aerospace Passport</dd></div></dl><p>These are indicative aircraft of interest. No ownership, order or manufacturer affiliation is implied.</p><p class="source-links">Engine references: <a href="https://www.rolls-royce.com/products-and-services/civil-aerospace/business-aviation/pearl-15.aspx" target="_blank" rel="noopener">Rolls-Royce</a> · <a href="https://www.geaerospace.com/commercial/aircraft-engines/passport" target="_blank" rel="noopener">GE Aerospace</a></p>'],maritime:['Maritime assets','<p>Our intended focus is the acquisition, ownership and management of maritime vessels for civil leasing and charter arrangements.</p><p>Vessel selection, propulsion, classification, flag registration and operator arrangements are determined for each proposed acquisition.</p><p>Commercial use and maintenance depend on applicable approvals and the specific vessel. No active fleet or manufacturer partnership is represented.</p>']};
- document.querySelectorAll('[data-asset]').forEach(button=>button.addEventListener('click',()=>{assetOpener=button;const [title,html]=content[button.dataset.asset];document.querySelector('#asset-title').textContent=title;document.querySelector('#asset-content').innerHTML=html;assetDialog.showModal()}));
+ const localizedContent={"en": {"aviation": ["A structured approach to aircraft ownership", "Our approach connects acquisition decisions with the ongoing responsibilities of ownership.", "Areas of oversight include:", ["Acquisition assessment and transaction coordination", "Ownership and contractual arrangements", "Operator and specialist-provider appointments", "Maintenance planning and technical reporting", "Insurance and expenditure review", "Lifecycle planning and eventual disposal"], "The scope of oversight is defined for each aircraft and its operating arrangements."], "maritime": ["Continuity throughout the vessel lifecycle", "We approach vessel ownership as a continuing responsibility, supported by coordinated technical, financial and contractual oversight.", "Areas of oversight include:", ["Acquisition assessment and transaction coordination", "Ownership and management arrangements", "Technical condition and maintenance planning", "Refit budgets and project oversight", "Insurance and expenditure review", "Lifecycle planning and eventual disposal"], "The scope of oversight is defined for each vessel and its operating arrangements."]}, "ar": {"aviation": ["نهج منظم لملكية الطائرات", "يربط نهجنا بين قرارات الاقتناء والمسؤوليات المستمرة المترتبة على الملكية.", "تشمل مجالات الإشراف:", ["تقييم الاقتناء وتنسيق إجراءات الصفقة", "ترتيبات الملكية والأطر التعاقدية", "تعيين المشغّلين ومقدّمي الخدمات المتخصصين", "تخطيط الصيانة والتقارير الفنية", "مراجعة التأمين والنفقات", "تخطيط دورة حياة الأصل والتصرف فيه مستقبلاً"], "يُحدّد نطاق الإشراف لكل طائرة وفقاً لترتيبات تشغيلها."], "maritime": ["الاستمرارية طوال دورة حياة الأصل البحري", "نتعامل مع ملكية السفن واليخوت باعتبارها مسؤولية مستمرة، يدعمها إشراف فني ومالي وتعاقدي متكامل.", "تشمل مجالات الإشراف:", ["تقييم الاقتناء وتنسيق إجراءات الصفقة", "ترتيبات الملكية والإدارة", "الحالة الفنية وتخطيط الصيانة", "ميزانيات التجديد والإشراف على المشاريع", "مراجعة التأمين والنفقات", "تخطيط دورة حياة الأصل والتصرف فيه مستقبلاً"], "يُحدّد نطاق الإشراف لكل سفينة أو يخت وفقاً لترتيبات تشغيله."]}};
+ const content=localizedContent[document.documentElement.lang]||localizedContent.en;
+ document.querySelectorAll('[data-asset]').forEach(button=>button.addEventListener('click',()=>{
+  assetOpener=button;
+  const [title,intro,label,items,closing]=content[button.dataset.asset];
+  document.querySelector('#asset-title').textContent=title;
+  const container=document.querySelector('#asset-content');container.replaceChildren();
+  [intro,label].forEach(text=>{const p=document.createElement('p');p.textContent=text;container.append(p)});
+  const list=document.createElement('ul');items.forEach(text=>{const li=document.createElement('li');li.textContent=text;list.append(li)});container.append(list);
+  const p=document.createElement('p');p.textContent=closing;container.append(p);
+  assetDialog.showModal();
+ }));
 })();
 // Gentle depth without visual noise; active only while a section is on screen.
 (() => {
@@ -47,7 +59,7 @@
  }));
 })();
 
-// A single, viewport-triggered reveal for each photographic composition.
+// A single, viewport-triggered reveal for each asset profile.
 (() => {
  const preference=matchMedia('(prefers-reduced-motion: reduce)');
  const cards=[...document.querySelectorAll('.asset-feature')];
@@ -58,4 +70,13 @@
  }),{threshold:.16,rootMargin:'0px 0px -40px 0px'});
  cards.forEach(card=>observer.observe(card));
  preference.addEventListener('change',()=>{if(preference.matches){observer.disconnect();document.body.classList.remove('feature-ready')}});
+})();
+
+// Both pages retain the current section when changing language.
+(() => {
+ document.querySelectorAll('.language-switch').forEach(link=>link.addEventListener('click',()=>{const url=new URL(link.href);url.hash=location.hash;link.href=url.href}));
+ const dialog=document.querySelector('#privacy-dialog');let opener;
+ document.querySelectorAll('[data-open-privacy]').forEach(button=>button.addEventListener('click',()=>{opener=button;dialog.showModal()}));
+ dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
+ dialog.addEventListener('close',()=>opener?.focus());
 })();

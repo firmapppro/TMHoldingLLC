@@ -40,3 +40,11 @@ Edition 05: the aviation/maritime section uses paired, unbranded generated conce
 Edition 06: asset compositions share the same top and bottom baseline. Portrait edges fade into the continuous graphite background using intersected gradient masks. Viewport entrance uses opacity only, without crop wipes, translation or zoom.
 
 Edition 07: aviation and maritime use native SVG profile studies instead of photographs. Fine bronze silhouettes and non-numeric construction guides are illustrative, not engineering specifications. Copy sits below the drawings; both directions share a baseline and opacity-only entrance.
+
+## Bilingual corporate edition — 9 October 2026
+
+The corporate website has two static entry points: `index.html` (English) and `ar.html` (Arabic). The header and navigation contain language links that retain the active section. Arabic uses native `lang="ar"` and `dir="rtl"` layout, including navigation, dialogs, form fields, asset columns and lifecycle order; email addresses remain LTR. The legal Arabic name is transcribed from the supplied registration record: تي ام هولدنج ذ.م.م.
+
+Client-provided copy is integrated into the existing visual system. The public landing pages show Doha, Qatar and establishment in 2026 without the registration number. The online brand guide also removes its former number treatments.
+
+The enquiry form remains a mailto draft composer addressed to info@tmholding.qa. It never claims successful delivery. A real delivery endpoint and error handling must be implemented before using a Send Enquiry button or delivery acknowledgement. The privacy dialog describes the actual draft workflow.
