@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" fill="none">
+<title>Illustrative business jet profile study</title>
+<g stroke="#BD9973" stroke-width="1" opacity=".23">
+<path d="M60 344H1140M80 118H1120M110 90V418M1090 90V418M60 410H1140"/>
+<path d="M106 114h8m-4-4v8m976-4h8m-4-4v8M106 340h8m-4-4v8m976-4h8m-4-4v8"/>
+<path d="M126 397v26m-6-20 12 14m952-20v26m-6-20 12 14M132 410h946"/>
+<path d="M180 106V360M1020 106V360" stroke-dasharray="4 8"/>
+</g>
+<g stroke="#BD9973" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round">
+<path d="M116 273c20-9 51-23 75-42l66-46c20-13 40-18 72-19h534l130-13 38-4 52 71-6 41-114 22-585 8-136-3-86-10c-20-2-35-3-40-5Z" fill="#BD9973" fill-opacity=".025"/>
+<path d="m861 165 79-96 54-10-32 111m-66-31 127-14 53 11-97 20"/>
+<path d="m952 64 20 103M988 65l-22 16" opacity=".55"/>
+<path d="M895 186c24-12 58-12 83-4l27 18-2 29-109 8-18-11 1-22Z" fill="#323438"/>
+<ellipse cx="992" cy="208" rx="9" ry="19"/><path d="m890 188-3 38m13-41 84 8m-83 33 83-5" opacity=".5"/>
+<path d="m521 251 235 86 143-5-262-90m-91 34 265 37M528 254l-63 62 61-2 94-39" fill="#323438"/>
+<path d="M139 269h805M174 259l753 2" opacity=".35"/>
+<path d="m225 226 40-34 42-11-4 37-78 8Zm92-46h26v36h-28Z" fill="#BD9973" fill-opacity=".13"/>
+<path d="M371 194h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19zm45 0h19v20h-19" opacity=".75"/>
+<path d="M326 228v-39c0-8 5-12 14-12h25c8 0 12 4 12 12v46h-51v-7Z" opacity=".5"/>
+<path d="m282 289 3 35m-13 0h31m376-39 6 37m-17 0h32"/>
+<circle cx="287" cy="335" r="13" fill="#323438"/><circle cx="287" cy="335" r="5" opacity=".5"/>
+<circle cx="680" cy="336" r="15" fill="#323438"/><circle cx="680" cy="336" r="6" opacity=".5"/>
+<circle cx="705" cy="336" r="15" fill="#323438"/><circle cx="705" cy="336" r="6" opacity=".5"/>
+</g>
+<g stroke="#BD9973" stroke-width=".8" opacity=".4"><path d="M180 245h26M193 232v26M1040 242h26m-13-13v26M512 120v40M506 128l6-8 6 8"/></g>
+</svg>

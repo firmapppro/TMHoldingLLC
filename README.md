@@ -38,3 +38,5 @@ The founder’s concept informed the ownership/operator distinction, five-stage 
 Edition 05: the aviation/maritime section uses paired, unbranded generated concept portraits at blue hour, with integrated copy and a staggered editorial layout. Each portrait reveals once on entering the viewport, using a 1.65-second crop reveal, gentle image settling and delayed copy. Reduced-motion preferences bypass the sequence.
 
 Edition 06: asset compositions share the same top and bottom baseline. Portrait edges fade into the continuous graphite background using intersected gradient masks. Viewport entrance uses opacity only, without crop wipes, translation or zoom.
+
+Edition 07: aviation and maritime use native SVG profile studies instead of photographs. Fine bronze silhouettes and non-numeric construction guides are illustrative, not engineering specifications. Copy sits below the drawings; both directions share a baseline and opacity-only entrance.
