@@ -46,7 +46,7 @@ body:not(.book) main{background:#323438}
 .asset-feature{background:transparent;overflow:visible}
 .asset-feature .asset-image{overflow:visible;border-radius:18px}
 .asset-feature .asset-image:after{display:none}
-.asset-feature .asset-image img{border-radius:18px;filter:saturate(.72) brightness(.9);mask-image:linear-gradient(180deg,transparent 0%,#000 9%,#000 47%,#000b3 61%,transparent 86%),linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100%);mask-composite:intersect;-webkit-mask-composite:source-in;transform:none!important;transition:filter 1s ease}
+.asset-feature .asset-image img{border-radius:18px;filter:saturate(.72) brightness(.9);mask-image:linear-gradient(180deg,transparent 0%,#000 9%,#000 47%,#000000b3 61%,transparent 86%),linear-gradient(90deg,transparent 0%,#000 7%,#000 93%,transparent 100%);mask-composite:intersect;transform:none!important;transition:filter 1s ease}
 .asset-feature .asset-image>span{border-bottom-color:#bd997333;color:var(--bronze)}
 .asset-feature .asset-copy{bottom:34px}
 .asset-feature .asset-copy p{min-height:81px}
@@ -55,5 +55,5 @@ body:not(.book) main{background:#323438}
 .feature-ready .asset-feature.is-visible .asset-image,.feature-ready .asset-feature.is-visible .asset-copy{opacity:1;transform:none}
 .asset-feature:hover .asset-image img{filter:saturate(.82) brightness(.97)}
 @media(max-width:1000px) and (min-width:601px){.asset-feature .asset-copy p{min-height:126px}.asset-feature .asset-copy h3{min-height:75px;display:flex;align-items:flex-end}}
-@media(max-width:600px){.focus .asset-grid{gap:16px}.asset-feature .asset-copy p{min-height:0}.asset-feature .asset-image img{mask-image:linear-gradient(180deg,transparent 0%,#000 10%,#000 43%,#000b3 56%,transparent 81%),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);border-radius:14px}}
+@media(max-width:600px){.focus .asset-grid{gap:16px}.asset-feature .asset-copy p{min-height:0}.asset-feature .asset-image img{mask-image:linear-gradient(180deg,transparent 0%,#000 10%,#000 43%,#000000b3 56%,transparent 81%),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);border-radius:14px}}
 @media(prefers-reduced-motion:reduce){.feature-ready .asset-feature .asset-image,.feature-ready .asset-feature .asset-copy{opacity:1;transition:none!important}}
