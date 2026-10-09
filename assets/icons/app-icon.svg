@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="TM Holding LLC monogram"><rect width="512" height="512" fill="#323438" /><g transform="translate(256 256) scale(1.18) translate(-250 -269)" fill="#BD9973"><path d="M 96,152 L 250,116 L 250,146 L 118,174 Z" fill="#BD9973" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="TM Holding LLC monogram"><rect width="512" height="512" fill="#323438" /><g transform="translate(256 256) scale(0.82) translate(-250 -250)" fill="#BD9973"><polygon points="250,22 435,98 478,250 435,402 250,478 65,402 22,250 65,98" fill="none" stroke="#BD9973" stroke-width="1.5" stroke-opacity="0.4" />
+    <polygon points="250,36 422,106 462,250 422,394 250,464 78,394 38,250 78,106" fill="none" stroke="#BD9973" stroke-width="0.8" stroke-opacity="0.2" stroke-dasharray="8 4" />
+    <rect x="247" y="19" width="6" height="6" transform="rotate(45 250 22)" fill="#BD9973" />
+    <rect x="247" y="475" width="6" height="6" transform="rotate(45 250 478)" fill="#BD9973" />
+    <rect x="19" y="247" width="6" height="6" transform="rotate(45 22 250)" fill="#BD9973" />
+    <rect x="475" y="247" width="6" height="6" transform="rotate(45 478 250)" fill="#BD9973" />
+
+    <path d="M 96,152 L 250,116 L 250,146 L 118,174 Z" fill="#BD9973" />
     <path d="M 118,174 L 250,146 L 250,154 L 126,178 Z" fill="#BD9973" />
     <path d="M 404,152 L 250,116 L 250,146 L 382,174 Z" fill="#BD9973" />
     <path d="M 382,174 L 250,146 L 250,154 L 374,178 Z" fill="#BD9973" />

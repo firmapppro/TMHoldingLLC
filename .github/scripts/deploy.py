@@ -4,7 +4,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[2]
 remote = '/TMHoldingLLC'
-allowed = {'.html', '.css', '.js', '.svg', '.webp', '.png', '.jpg', '.jpeg', '.woff2', '.ttf', '.txt'}
+allowed = {'.html', '.css', '.js', '.svg', '.webp', '.png', '.jpg', '.jpeg', '.woff2', '.ttf', '.txt', '.ico', '.webmanifest'}
 files = [f for folder in ('assets', 'brandbook') for f in (root / folder).rglob('*') if f.is_file() and f.suffix in allowed]
 files += list(root.glob('*.html'))
 files.sort(key=lambda f: (f.suffix == '.html', str(f)))
